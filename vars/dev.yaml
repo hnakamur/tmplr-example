@@ -1,0 +1,10 @@
+env: dev
+zones:
+  osk:
+    hostnames:
+      - sv01-osk.dev.example.jp
+      - sv02-osk.dev.example.jp
+  tky:
+    hostnames:
+      - sv01-tky.dev.example.jp
+      - sv02-tky.dev.example.jp

@@ -1,0 +1,12 @@
+env: production
+zones:
+  osk:
+    hostnames:
+      - sv01-osk.example.jp
+      - sv02-osk.example.jp
+      - sv03-osk.example.jp
+  tky:
+    hostnames:
+      - sv01-tky.example.jp
+      - sv02-tky.example.jp
+      - sv03-tky.example.jp
