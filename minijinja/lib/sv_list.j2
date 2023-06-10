@@ -1,10 +1,13 @@
 {%- macro servers_in_zone(zone) %}
 {%- set zone_vars = zones[zone] %}
-{%- for sv in zone_vars.hostnames %}
-- {{ sv }}
+- [ ] Do something on the following servers.
+{% for sv in zone_vars.server_ids_in_zone %}
+{%- set hostname = sv + "-" + zone %}
+{%- set fqdn = hostname + "." + domain %}
+  * {{ fqdn }}: {{ param1[hostname ]}} 
 {%- endfor %}
 {%- if env == "production" %}
 
-Do something more only for production.
+- [ ] Do something more only for production.
 {%- endif %}
 {%- endmacro %}

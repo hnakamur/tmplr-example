@@ -1,10 +1,16 @@
 env: dev
+domain: dev.example.jp
 zones:
   osk:
-    hostnames:
-      - sv01-osk.dev.example.jp
-      - sv02-osk.dev.example.jp
+    server_ids_in_zone:
+      - sv01
+      - sv02
   tky:
-    hostnames:
-      - sv01-tky.dev.example.jp
-      - sv02-tky.dev.example.jp
+    server_ids_in_zone:
+      - sv01
+      - sv02
+param1:
+  sv01-osk: 10
+  sv02-osk: 20
+  sv01-tky: 20
+  sv02-tky: 10
